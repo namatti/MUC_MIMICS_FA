@@ -1,0 +1,7 @@
+"","SANS_0PovertyOfSpeech","SANS_10PovertyOfContentOfSpeech","PANSS_N5DifficultyInAbstractThinking","PANSS_N6LackOfSpontaneityAndFlowOfConversation","PANSS_N7StereotypedThinking","PANSS_P2ConceptualDisorganization"
+"SANS_0PovertyOfSpeech","1 (p=0)","0.73 (p=0)","0.35 (p=0)","0.7 (p=0)","0.22 (p=0.001)","0.07 (p=0.258)"
+"SANS_10PovertyOfContentOfSpeech","0.73 (p=0)","1 (p=0)","0.42 (p=0)","0.6 (p=0)","0.29 (p=0)","0.17 (p=0.012)"
+"PANSS_N5DifficultyInAbstractThinking","0.35 (p=0)","0.42 (p=0)","1 (p=0)","0.47 (p=0)","0.4 (p=0)","0.44 (p=0)"
+"PANSS_N6LackOfSpontaneityAndFlowOfConversation","0.7 (p=0)","0.6 (p=0)","0.47 (p=0)","1 (p=0)","0.42 (p=0)","0.34 (p=0)"
+"PANSS_N7StereotypedThinking","0.22 (p=0)","0.29 (p=0)","0.4 (p=0)","0.42 (p=0)","1 (p=0)","0.3 (p=0)"
+"PANSS_P2ConceptualDisorganization","0.07 (p=0.258)","0.17 (p=0.006)","0.44 (p=0)","0.34 (p=0)","0.3 (p=0)","1 (p=0)"
