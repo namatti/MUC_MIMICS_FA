@@ -1,0 +1,7 @@
+"","SANS_0PovertyOfSpeech","SANS_10PovertyOfContentOfSpeech","PANSS_N5DifficultyInAbstractThinking","PANSS_N6LackOfSpontaneityAndFlowOfConversation","PANSS_N7StereotypedThinking","PANSS_P2ConceptualDisorganization"
+"SANS_0PovertyOfSpeech",1,0.82,0.41,0.77,0.28,0.1
+"SANS_10PovertyOfContentOfSpeech",0.82,1,0.47,0.68,0.36,0.22
+"PANSS_N5DifficultyInAbstractThinking",0.41,0.47,1,0.54,0.44,0.47
+"PANSS_N6LackOfSpontaneityAndFlowOfConversation",0.77,0.68,0.54,1,0.49,0.38
+"PANSS_N7StereotypedThinking",0.28,0.36,0.44,0.49,1,0.34
+"PANSS_P2ConceptualDisorganization",0.1,0.22,0.47,0.38,0.34,1

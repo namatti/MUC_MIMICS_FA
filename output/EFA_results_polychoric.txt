@@ -1,0 +1,45 @@
+Factor Analysis using method =  ml
+Call: fa(r = poly_cor$rho, nfactors = 2, n.obs = nrow(efa_items_complete), 
+    rotate = "oblimin", fm = "ml")
+Standardized loadings (pattern matrix) based upon correlation matrix
+                                                 ML2   ML1   h2    u2 com
+SANS_0PovertyOfSpeech                           1.04       1.00 0.005 1.0
+SANS_10PovertyOfContentOfSpeech                 0.79       0.71 0.287 1.0
+PANSS_N5DifficultyInAbstractThinking                  0.61 0.52 0.481 1.2
+PANSS_N6LackOfSpontaneityAndFlowOfConversation  0.65  0.38 0.77 0.227 1.6
+PANSS_N7StereotypedThinking                           0.57 0.38 0.617 1.1
+PANSS_P2ConceptualDisorganization                     0.74 0.48 0.519 1.1
+
+                       ML2  ML1
+SS loadings           2.33 1.54
+Proportion Var        0.39 0.26
+Cumulative Var        0.39 0.64
+Proportion Explained  0.60 0.40
+Cumulative Proportion 0.60 1.00
+
+ With factor correlations of 
+     ML2  ML1
+ML2 1.00 0.41
+ML1 0.41 1.00
+
+Mean item complexity =  1.2
+Test of the hypothesis that 2 factors are sufficient.
+
+df null model =  15  with the objective function =  3.25 with Chi Square =  799.2
+df of  the model are 4  and the objective function was  0.06 
+
+The root mean square of the residuals (RMSR) is  0.02 
+The df corrected root mean square of the residuals is  0.03 
+
+The harmonic n.obs is  250 with the empirical chi square  2.31  with prob <  0.68 
+The total n.obs was  250  with Likelihood Chi Square =  14.45  with prob <  0.006 
+
+Tucker Lewis Index of factoring reliability =  0.95
+RMSEA index =  0.102  and the 90 % confidence intervals are  0.049 0.162
+BIC =  -7.63
+Fit based upon off diagonal values = 1
+Measures of factor score adequacy             
+                                                   ML2  ML1
+Correlation of (regression) scores with factors   0.98 0.84
+Multiple R square of scores with factors          0.97 0.70
+Minimum correlation of possible factor scores     0.94 0.40

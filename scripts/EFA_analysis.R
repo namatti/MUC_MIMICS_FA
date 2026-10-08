@@ -73,3 +73,61 @@ parallel <- fa.parallel(efa_items_complete,
                         fm = "ml",      # maximum likelihood extraction
                         fa = "fa",      # factor analysis (not PCA)
                         n.iter = 100)   # number of iterations
+
+png('output/parallel_analysis.png', width = 800, height = 600)
+fa.parallel(efa_items_complete, 
+            fm = "ml",
+            fa = "fa",
+            n.iter = 100)
+dev.off()
+
+# KMO test
+KMO(efa_items_complete)
+
+# Bartlett's test
+cortest.bartlett(efa_items_complete)
+
+# Run EFA with 2 factors
+efa_result <- fa(efa_items_complete, 
+                 nfactors = 2,        
+                 rotate = "oblimin",  
+                 fm = "ml")           
+
+# Print the results
+print(efa_result, digits = 2, cut = 0.3)
+
+# Save full output to text file
+sink('output/EFA_results.txt')
+print(efa_result, digits = 2, cut = 0.3)
+sink()
+
+# Extract factor loadings
+loadings_df <- as.data.frame(unclass(efa_result$loadings))
+
+# Save to Excel
+# Step 1: Extract factor loadings
+loadings_df <- as.data.frame(unclass(efa_result$loadings))
+
+# Step 2: Check it worked
+loadings_df
+
+library(openxlsx)
+wb <- createWorkbook()
+addWorksheet(wb, "Factor Loadings")
+writeData(wb, "Factor Loadings", loadings_df, rowNames = TRUE)
+
+# Add model fit indices
+fit_indices <- data.frame(
+  Index = c("TLI", "RMSEA", "RMSR", "BIC"),
+  Value = c(efa_result$TLI, efa_result$RMSEA[1], efa_result$rms, efa_result$BIC)
+)
+addWorksheet(wb, "Model Fit")
+writeData(wb, "Model Fit", fit_indices)
+
+# Save
+saveWorkbook(wb, 'output/EFA_results.xlsx')
+
+png('output/EFA_factor_loadings.png', width = 800, height = 600)
+fa.diagram(efa_result)
+dev.off()
+
